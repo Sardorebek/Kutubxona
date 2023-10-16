@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Record</title>
+</head>
+<body>
+      <h1>Tizimdagi barcha recordlar ro'yxati</h1>
+      <br><br>
+      {% for record in recordlar %}
+      <br>
+      <h1>{{record.id}}. {{record.talaba}}({{record.kitob.kutubxonachi}})</h1>
+      {% endfor %}
+</body>
+</html>
